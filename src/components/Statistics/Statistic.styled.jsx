@@ -22,11 +22,13 @@ export const StatItem = styled.li`
 `;
 
 export const StatList = styled.ul`
-  list-style: none;
   padding: 0;
   margin: 0;
+
   display: flex;
   justify-content: center;
+
+  list-style: none;
 `;
 
 export const StatSection = styled.div`

@@ -1,15 +1,10 @@
 import PropTypes from 'prop-types';
 import TransactionRow from './TransactionRow';
-//styles
-
-// function TransactionHistory({ transactions }) {
-//   console.log('transactions :>> ', transactions);
-// }
+import { TransactionTable } from './TransactionHistory.styled';
 
 const TransactionHistory = transactions => {
-  //   const { transactions } = transactions;
   return (
-    <table>
+    <TransactionTable>
       <thead>
         <tr>
           <th>Type</th>
@@ -23,7 +18,7 @@ const TransactionHistory = transactions => {
           return <TransactionRow key={data.id} transactions={data} />;
         })}
       </tbody>
-    </table>
+    </TransactionTable>
   );
 };
 
