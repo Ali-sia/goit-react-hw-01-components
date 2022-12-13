@@ -1,32 +1,39 @@
 import PropTypes from 'prop-types';
 import css from './Profile.module.css';
 
-import { ProfileCard } from './Profile.styled';
+import {
+  ProfileCard,
+  Description,
+  Stats,
+  Avatar,
+  Label,
+  Quantity,
+} from './Profile.styled';
 
 const Profile = ({ avatar, username, tag, location, stats }) => {
   return (
     <ProfileCard>
-      <div className={css.description}>
-        <img src={avatar} alt="User avatar" className={css.avatar} />
+      <Description>
+        <Avatar src={avatar} alt="User avatar" />
         <p className={css.name}>{username}</p>
         <p className={css.tag}>{tag}</p>
         <p className={css.location}>{location}</p>
-      </div>
+      </Description>
 
-      <ul className={css.stats}>
+      <Stats>
         <li>
-          <span className={css.label}>Followers</span>
-          <span className={css.quantity}>{stats.followers}</span>
+          <Label>Followers</Label>
+          <Quantity>{stats.followers}</Quantity>
         </li>
         <li>
-          <span className={css.label}>Views</span>
-          <span className={css.quantity}>{stats.views}</span>
+          <Label>Views</Label>
+          <Quantity>{stats.views}</Quantity>
         </li>
         <li>
-          <span className={css.label}>Likes</span>
-          <span className={css.quantity}>{stats.likes}</span>
+          <Label>Likes</Label>
+          <Quantity>{stats.likes}</Quantity>
         </li>
-      </ul>
+      </Stats>
     </ProfileCard>
   );
 };
