@@ -8,7 +8,7 @@ import FriendList from './FriendList/FriendList';
 import friends from './FriendList/friends.json';
 
 import TransactionHistory from './TransactionHistory/TransactionHistiry';
-import transactionData from './TransactionHistory/transactions.json';
+import transactions from './TransactionHistory/transactions.json';
 
 export default function App() {
   return (
@@ -26,8 +26,7 @@ export default function App() {
 
       <FriendList friends={friends} />
 
-      {/* <TransactionHistory items={transactions} /> */}
-      <TransactionHistory items={transactionData}></TransactionHistory>
+      <TransactionHistory items={transactions} />
     </div>
   );
 }

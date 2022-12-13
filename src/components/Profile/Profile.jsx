@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import {
   ProfileCard,
   Description,
+  UserName,
   Stats,
   Avatar,
   Label,
@@ -13,7 +14,7 @@ const Profile = ({ avatar, username, tag, location, stats }) => {
     <ProfileCard>
       <Description>
         <Avatar src={avatar} alt="User avatar" />
-        <p>{username}</p>
+        <UserName>{username}</UserName>
         <p>@{tag}</p>
         <p>{location}</p>
       </Description>
