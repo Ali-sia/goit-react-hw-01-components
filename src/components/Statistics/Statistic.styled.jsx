@@ -7,7 +7,7 @@ const randomColor = () => {
 export const StatItem = styled.li`
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  // justify-content: center;
   align-items: center;
 
   border: 1px solid gray;
@@ -26,7 +26,7 @@ export const StatList = styled.ul`
   padding: 0;
   margin: 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 `;
 
 export const StatSection = styled.div`
