@@ -1,9 +1,11 @@
 import PropTypes from 'prop-types';
 import css from './Profile.module.css';
 
+import { ProfileCard } from './Profile.styled';
+
 const Profile = ({ avatar, username, tag, location, stats }) => {
   return (
-    <div className={css.profile}>
+    <ProfileCard>
       <div className={css.description}>
         <img src={avatar} alt="User avatar" className={css.avatar} />
         <p className={css.name}>{username}</p>
@@ -25,7 +27,7 @@ const Profile = ({ avatar, username, tag, location, stats }) => {
           <span className={css.quantity}>{stats.likes}</span>
         </li>
       </ul>
-    </div>
+    </ProfileCard>
   );
 };
 
