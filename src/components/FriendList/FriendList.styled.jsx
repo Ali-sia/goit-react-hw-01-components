@@ -1,30 +1,54 @@
 import styled from '@emotion/styled';
 
 export const UserItem = styled.li`
-  width: 200px;
-
   display: flex;
   align-items: center;
 
-  background-color: chartreuse;
+  margin-bottom: 20px;
+  padding: 5px;
+
+  width: 250px;
+
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+
+  img {
+    margin-right: 20px;
+
+    width: 60px;
+    height: 60px;
+
+    border-radius: 10%;
+    border: 1px solid darkgray;
+  }
+  p {
+    font-size: 24px;
+    font-weight: 600;
+  }
 `;
 
 export const FriendsState = styled.ul`
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin: 25px auto 25px;
 `;
 
 export const Chip = styled.span`
-  width: 20px;
-  height: 20px;
+  margin-right: 15px;
+
+  width: 15px;
+  height: 15px;
+
   border-radius: 50%;
 
   background-color: ${props => {
-    if (props.type) {
+    if (props.type === 'true') {
       return 'green';
     }
-
     return 'red';
   }};
 `;
