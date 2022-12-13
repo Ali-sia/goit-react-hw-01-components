@@ -1,9 +1,6 @@
 import styled from '@emotion/styled';
 
 export const ProfileCard = styled.div`
-  margin: 0;
-  padding: 0;
-
   max-width: 300px;
 
   background-color: wheat;
@@ -18,10 +15,6 @@ export const Description = styled.div`
 
   padding: 5px;
 
-  p {
-    margin: 0;
-    padding: 0;
-  }
   p:not(:last-child) {
     padding-bottom: 5px;
   }
@@ -37,12 +30,14 @@ export const Avatar = styled.img`
 `;
 
 export const Stats = styled.ul`
+  padding: 0;
+  margin: 0;
+
   display: flex;
   justify-content: space-around;
   align-items: center;
 
   list-style: none;
-  padding: 0;
 
   li {
     display: flex;

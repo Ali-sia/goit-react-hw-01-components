@@ -1,6 +1,4 @@
 import PropTypes from 'prop-types';
-import css from './Profile.module.css';
-
 import {
   ProfileCard,
   Description,
@@ -15,9 +13,9 @@ const Profile = ({ avatar, username, tag, location, stats }) => {
     <ProfileCard>
       <Description>
         <Avatar src={avatar} alt="User avatar" />
-        <p className={css.name}>{username}</p>
-        <p className={css.tag}>{tag}</p>
-        <p className={css.location}>{location}</p>
+        <p>{username}</p>
+        <p>@{tag}</p>
+        <p>{location}</p>
       </Description>
 
       <Stats>
