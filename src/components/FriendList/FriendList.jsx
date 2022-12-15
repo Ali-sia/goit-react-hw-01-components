@@ -10,7 +10,7 @@ const FriendList = ({ friends }) => {
       flexDirection="column"
       justifyContent="center"
       alignItems="center"
-      m="25px auto 25px"
+      m={5}
     >
       {friends.map(user => {
         return <FriendListItem key={user.id} friends={user} />;

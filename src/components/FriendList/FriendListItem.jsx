@@ -14,11 +14,11 @@ const FriendListItem = ({ friends }) => {
     <Box
       display="flex"
       alignItems="center"
-      mb="20px"
-      p="5px"
+      mb={4}
+      p={3}
       width="250px"
-      backgroundColor="wheat"
-      borderRadius="10px"
+      backgroundColor="background"
+      borderRadius={3}
       boxShadow="0 0 10px 5px rgba(221, 221, 221, 1)"
     >
       <Chip type={isOnline ? `true` : `false`}></Chip>

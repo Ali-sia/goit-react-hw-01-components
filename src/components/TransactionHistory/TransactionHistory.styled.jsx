@@ -1,31 +1,32 @@
 import styled from 'styled-components';
 
 export const TransactionTable = styled.table`
-  margin: 25px auto;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: ${p => p.theme.space[4]}px;
+  margin-bottom: ${p => p.theme.space[4]}px;
 
-  border-radius: 5%;
-  background-color: white;
+  border-radius: ${p => p.theme.radii.md};
+  background-color: ${p => p.theme.colors.background};
 
   text-align: center;
 
   thead {
-    // padding-top: 25px;
-
-    background-color: deepskyblue;
-    color: white;
+    background-color: ${p => p.theme.colors.secondary};
+    color: ${p => p.theme.colors.white};
     text-transform: uppercase;
   }
 
   th {
-    padding: 0 80px;
+    padding: 0 ${p => p.theme.space[6]}px;
     height: 30px;
   }
   tr:nth-child(even) {
-    background-color: lightgrey;
+    background-color: ${p => p.theme.colors.muted};
   }
 
   tr {
-    padding: 18px 80px;
-    border: 1px solid darkgray;
+    padding: ${p => p.theme.space[4]}px ${p => p.theme.space[6]}px;
+    border: ${p => p.theme.borders.normal} ${p => p.theme.colors.black};
   }
 `;

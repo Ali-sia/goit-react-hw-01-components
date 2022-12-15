@@ -1,71 +1,47 @@
 import styled from 'styled-components';
 
 export const ProfileCard = styled.div`
-  margin: 25px auto 30px auto;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: ${p => p.theme.space[4]}px;
+  margin-bottom: ${p => p.theme.space[4]}px;
 
   max-width: 300px;
-  background-color: rgb(255, 255, 255);
-  border-radius: 10px;
+  background-color: ${p => p.theme.colors.background};
+  border-radius: ${p => p.theme.radii.md};
 `;
 
-//not work because dont import to any file
-// export const Description = styled.div`
-//   // display: flex;
-//   // flex-direction: column;
-//   // justify-content: center;
-//   // align-items: center;
-
-//   // padding: 5px;
-
-//   p {
-//     margin: 5px;
-
-//     color: darkgray;
-//     font-size: 18px;
-//   }
-// `;
-
 export const UserName = styled.span`
-  margin: 10px;
+  margin: ${p => p.theme.space[3]}px;
 
-  color: black;
-  font-weight: bold;
-  font-size: 24px;
+  color: ${p => p.theme.colors.black};
+  font-weight: ${p => p.theme.fontWeights.bold};
+  font-size: ${p => p.theme.fontSizes.m};
 `;
 
 export const Avatar = styled.img`
   width: 150px;
   height: 150px;
 
-  border-radius: 50%;
-  border: 4px solid gray;
+  border-radius: ${p => p.theme.radii.round};
+  border: ${p => p.theme.borders.normal} ${p => p.theme.colors.black};
 `;
-
-//not work because dont import to any file
-
-// export const Stats = styled.ul`
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-
-//   background-color: ghostwhite;
-// `;
 
 export const ListItem = styled.li`
   display: flex;
   align-items: center;
   flex-direction: column;
 
-  border: 1px solid darkgray;
-  padding: 15px 26px;
+  border: ${p => p.theme.borders.normal} ${p => p.theme.colors.black};
+  padding: ${p => p.theme.space[4]}px;
 `;
 
 export const Label = styled.span`
-  padding-bottom: 5px;
-  color: darkgray;
+  padding-bottom: ${p => p.theme.space[2]}px
+  color: ${p => p.theme.colors.black};
 `;
 
 export const Quantity = styled.span`
-  color: black;
-  font-weight: 800;
+  color: ${p => p.theme.colors.black};
+  font-weight: ${p => p.theme.fontWeights.bold};
 `;

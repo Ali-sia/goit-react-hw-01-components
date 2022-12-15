@@ -20,7 +20,7 @@ const Profile = ({ avatar, username, tag, location, stats }) => {
         alignItems="center"
         justifyContent="center"
         flexDirection="column"
-        p="5px"
+        p={3}
       >
         <Avatar src={avatar} alt="User avatar" />
         <UserName>{username}</UserName>
@@ -32,7 +32,7 @@ const Profile = ({ avatar, username, tag, location, stats }) => {
         display="flex"
         alignItems="center"
         justifyContent="center"
-        backgroundColor=" ghostwhite"
+        backgroundColor=" profileAccent"
       >
         <ListItem>
           <Label>Followers</Label>
