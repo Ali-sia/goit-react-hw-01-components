@@ -1,3 +1,5 @@
+import { GlobalStyle } from './GlobalStyle';
+
 import Profile from './Profile/Profile';
 import user from './Profile/user.json';
 
@@ -27,6 +29,7 @@ export default function App() {
       <FriendList friends={friends} />
 
       <TransactionHistory items={transactions} />
+      <GlobalStyle />
     </div>
   );
 }
