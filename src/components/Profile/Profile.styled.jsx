@@ -8,21 +8,22 @@ export const ProfileCard = styled.div`
   border-radius: 10px;
 `;
 
-export const Description = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+//not work because dont import to any file
+// export const Description = styled.div`
+//   // display: flex;
+//   // flex-direction: column;
+//   // justify-content: center;
+//   // align-items: center;
 
-  padding: 5px;
+//   // padding: 5px;
 
-  p {
-    margin: 5px;
+//   p {
+//     margin: 5px;
 
-    color: darkgray;
-    font-size: 18px;
-  }
-`;
+//     color: darkgray;
+//     font-size: 18px;
+//   }
+// `;
 
 export const UserName = styled.span`
   margin: 10px;
@@ -40,24 +41,23 @@ export const Avatar = styled.img`
   border: 4px solid gray;
 `;
 
-export const Stats = styled.ul`
+//not work because dont import to any file
+
+// export const Stats = styled.ul`
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+
+//   background-color: ghostwhite;
+// `;
+
+export const ListItem = styled.li`
   display: flex;
-  justify-content: center;
   align-items: center;
+  flex-direction: column;
 
-  margin: 0;
-  padding: 0;
-
-  background-color: ghostwhite;
-
-  li {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-
-    border: 1px solid darkgray;
-    padding: 15px 26px;
-  }
+  border: 1px solid darkgray;
+  padding: 15px 26px;
 `;
 
 export const Label = styled.span`
