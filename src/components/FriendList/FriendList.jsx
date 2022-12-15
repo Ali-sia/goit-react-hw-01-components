@@ -1,14 +1,21 @@
 import PropTypes from 'prop-types';
 import FriendListItem from './FriendListItem';
-import { FriendsState } from './FriendList.styled';
+// import { FriendsState } from './FriendList.styled';
+import { Box } from '../Box';
 
 const FriendList = ({ friends }) => {
   return (
-    <FriendsState>
+    <Box
+      display="flex"
+      flexDirection="column"
+      justifyContent="center"
+      alignItems="center"
+      m="25px auto 25px"
+    >
       {friends.map(user => {
         return <FriendListItem key={user.id} friends={user} />;
       })}
-    </FriendsState>
+    </Box>
   );
 };
 

@@ -21,15 +21,11 @@ export const StatItem = styled.li`
   }
 `;
 
-export const StatList = styled.ul`
-  padding: 0;
-  margin: 0;
+// export const StatList = styled.ul`
+//   display: flex;
+//   justify-content: center;
 
-  display: flex;
-  justify-content: center;
-
-  list-style: none;
-`;
+// `;
 
 export const StatSection = styled.div`
   margin: 25px auto 25px;

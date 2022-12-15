@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import { StatItem } from './Statistic.styled';
+// import { Box } from '../Box';
 
 const StatisticInfo = ({ stats }) => {
   const { label, percentage } = stats;
