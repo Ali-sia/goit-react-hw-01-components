@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import styled from 'styled-components';
 
 const randomColor = () => {
   return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
